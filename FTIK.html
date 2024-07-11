@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTIK</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        .josefin-sans{
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+        }
+        /* Animasi Fade-in */
+        .fade-in {
+            opacity: 0;
+            animation: fadeInAnimation 1s ease-in-out forwards;
+        }
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: Slide-in effect */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+      </style>
+</head>
+<body class="josefin-sans">
+    <!--Navbar-->
+    <nav class="bg-slate-950 p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white font-bold text-3xl italic">FTIK</div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex space-x-4">
+            <a href="index.html" class="text-white">Home</a>
+            <a href="index.html#Academics" class="text-white">Academics</a>
+            <a href="index.html#Structure" class="text-white">Structure</a>
+            <a href="index.html#Achievment" class="text-white">Achievements</a>
+            <a href="index.html#Gallery" class="text-white">Gallery</a>
+          </div>
+        </div>
+        <div class="md:hidden hidden" id="menu">
+          <a href="index.html" class="block px-4 py-2 text-white">Home</a>
+          <a href="index.html#Academics" class="block px-4 py-2 text-white">Academics</a>
+          <a href="index.html#Structure" class="block px-4 py-2 text-white">Structure</a>
+          <a href="index.html#Achievment" class="block px-4 py-2 text-white">Achievements</a>
+          <a href="ndex.html#Gallery" class="block px-4 py-2 text-white">Gallery</a>
+        </div>
+    </nav>
+    <!--FTIK-->
+    <div class="bg-slate-950 w-auto h-auto xl:h-screen text-white">
+        <div class="grid grid-cols-2 gap-10 p-10 ">
+            <div class="col-span-2 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h1 class="text-5xl font-bold text-center mb-4">Fakultas Teknologi Informasi dan Komunikasi</h1>
+                <p class="text-lg text-justify md:text-center max-w-6xl mx-auto">
+                    Fakultas Teknologi Informasi dan Komunikasi (FTIK) adalah salah satu fakultas di perguruan tinggi yang 
+                    didedikasikan untuk mempelajari, meneliti, dan mengembangkan berbagai aspek teknologi informasi dan komunikasi (TIK). 
+                    TIK mencakup berbagai bidang yang berhubungan dengan teknologi komputer, perangkat lunak, jaringan, serta komunikasi 
+                    data dan media digital. Fakultas ini bertujuan untuk menghasilkan tenaga ahli yang mampu beradaptasi dan berinovasi 
+                    dalam menghadapi tantangan di era digital.
+                </p>
+            </div>
+            <div class="col-span-2 md:col-span-1 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Visi</h2>
+                <p>
+                  Menyelenggarakan pendidikan Akademik di bidang Teknologi Informasi & Komunikasi untuk menghasilkan tenaga kerja dan entrepreneur yang profesional dan berkarakter di tahun 2032
+                </p>
+            </div>
+            <div class="col-span-2 md:col-span-1 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Misi</h2>
+                <ul class="list-disc pl-5 space-y-2 text-lg leading-relaxed">
+                    <li>Menyelenggarakan pendidikan berkualitas tinggi dalam bidang teknologi informasi dan komunikasi.</li>
+                    <li>Melakukan penelitian inovatif yang berkontribusi pada perkembangan ilmu pengetahuan dan teknologi.</li>
+                    <li>Menyediakan layanan pengabdian kepada masyarakat berbasis teknologi informasi dan komunikasi.</li>
+                    <li>Menjalin kerjasama dengan industri dan lembaga penelitian untuk meningkatkan kualitas pendidikan dan penelitian.</li>
+                </ul>
+            </div>
+            <div class="col-span-2 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Tujuan</h2>
+                <ul class="list-disc px-5 lg:px-52 xl:px-64 space-y-2 text-lg leading-relaxed">
+                    <li>Menghasilkan lulusan yang kompeten dan siap kerja di bidang teknologi informasi dan komunikasi.</li>
+                    <li>Berperan aktif dalam penelitian yang inovatif dan aplikatif di bidang TIK.</li>
+                    <li>Memberikan kontribusi nyata kepada masyarakat melalui pengabdian berbasis TIK.</li>
+                    <li>Memperkuat jaringan kerjasama dengan berbagai pihak untuk pengembangan TIK.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const dropdownBtn = document.getElementById('dropdown-btn');
+    const dropdown = document.getElementById('dropdown');
+  
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  
+    dropdownBtn.addEventListener('click', () => {
+      dropdown.classList.toggle('hidden');
+    });
+</script>
+</html>

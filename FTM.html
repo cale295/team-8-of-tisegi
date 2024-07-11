@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>TI</title>
+    <style>
+        .josefin-sans{
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="josefin-sans">
+    <!--Navbar-->
+    <nav class="bg-slate-950 p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white font-bold text-3xl italic">Film, Television & Media Studies</div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex space-x-4">
+            <a href="index.html" class="text-white">Home</a>
+            <a href="#ABOUT" class="text-white">About</a>
+            <a href="#VMC" class="text-white">VMC</a>
+            <a href="#PRDC" class="text-white">PRDC</a>
+          </div>
+        </div>
+        <div class="md:hidden hidden" id="menu">
+          <a href="index.html" class="block px-4 py-2 text-white">Home</a>
+          <a href="#ABOUT" class="block px-4 py-2 text-white">About</a>
+          <a href="#VMC" class="block px-4 py-2 text-white">VMC</a>
+          <a href="#PRDC" class="block px-4 py-2 text-white">PRDC</a>
+        </div>
+    </nav>
+    <!--about-->
+    <div id="ABOUT" class="bg-slate-950 w-auto h-auto text-white">
+        <div class="grid grid-cols-2 gap-10 p-10 ">
+            <div class="col-span-2 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h1 class="text-5xl font-bold text-center mb-4">Prodi Film, Television & Media Studies</h1>
+                <p class="text-lg text-justify md:text-center max-w-6xl mx-auto">
+                    Program Studi Kajian Film, Televisi dan Media (KFTM) mempelajari berbagai aspek film, televisi, dan media secara teoritis dan praktis. 
+                    Mahasiswa akan mempelajari sejarah, estetika, produksi, dan distribusi film dan televisi, serta berbagai aspek media lainnya seperti 
+                    media sosial, media massa, dan media digital. Lulusan KFTM diharapkan memiliki pengetahuan dan keterampilan yang luas mengenai film, 
+                    televisi, dan media, serta mampu bekerja secara profesional di industri kreatif, media, dan komunikasi. Selain itu, lulusan KFTM juga 
+                    diharapkan memiliki kemampuan berpikir kritis dan analitis dalam menganalisis dan mengkaji film, televisi, dan media.
+                </p>
+            </div>
+            <div class="col-span-2 md:col-span-1 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Visi</h2>
+                <p>Menjadi lembaga yang diakui secara global dalam pendidikan, penelitian, dan praktik di bidang film, televisi, dan studi media, 
+                    serta menjadi pemimpin dalam menciptakan karya-karya yang menginspirasi dan mempengaruhi perubahan positif dalam masyarakat.   
+                </p>
+            </div>
+            <div class="col-span-2 md:col-span-1 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Misi</h2>
+                <ul class="list-disc pl-5 space-y-2 text-lg leading-relaxed">
+                    <li>Pendidikan Berkualitas: Memberikan pendidikan berkualitas tinggi yang mengembangkan keterampilan praktis, kecerdasan kreatif, 
+                        dan pemahaman yang mendalam tentang industri film, televisi, dan media.</li>
+                    <li>Penelitian Inovatif: Mendorong penelitian inovatif yang memperluas batas-batas pengetahuan di bidang film, televisi, dan media, 
+                        serta berkontribusi pada pemahaman yang lebih baik tentang pengaruh media dalam masyarakat.</li>
+                    <li>Koneksi Industri: Menjalin kemitraan dengan industri film, televisi, dan media untuk memberikan pengalaman praktis kepada mahasiswa, 
+                        serta memfasilitasi kesempatan untuk kolaborasi dan penempatan kerja setelah lulus.</li>
+                    <li> Menghargai dan mempromosikan keanekaragaman budaya melalui karya-karya film, televisi, dan media yang memperjuangkan perspektif yang 
+                        inklusif dan beragam.</li>
+                    <li>Pemberdayaan Mahasiswa: Mendorong mahasiswa untuk mengeksplorasi kreativitas mereka sendiri, mengembangkan bakat mereka, dan mengejar 
+                        impian mereka di dunia perfilman, televisi, dan media.</li>
+                </ul>
+            </div>
+            <div class="col-span-2 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Tujuan</h2>
+                <ul class="list-disc px-5 lg:px-52 xl:px-64 space-y-2 text-lg leading-relaxed">
+                    <li>Menghasilkan Lulusan Unggul: Memastikan bahwa lulusan memiliki pengetahuan, keterampilan, dan pemahaman yang diperlukan untuk sukses 
+                        dalam industri film, televisi, dan media.</li>
+                    <li>Menjadi Pusat Penelitian Unggul: Menjadi pusat penelitian yang diakui secara internasional dalam bidang film, televisi, dan media, 
+                        dengan fokus pada inovasi dan penemuan yang relevan dengan perkembangan industri.</li>
+                    <li>Menjadi Mitra Industri Utama: Memperkuat hubungan dengan industri film, televisi, dan media untuk memberikan mahasiswa pengalaman yang 
+                        berharga dan memfasilitasi kolaborasi yang berkelanjutan.</li>
+                    <li>Memberikan Kontribusi Positif untuk Masyarakat: Menghasilkan karya-karya yang tidak hanya menghibur, tetapi juga memberikan pemahaman 
+                        yang lebih dalam tentang isu-isu sosial, budaya, dan politik yang relevan.</li>
+                    <li>Meningkatkan Reputasi Global: Membangun reputasi global sebagai lembaga pendidikan dan penelitian terkemuka di bidang film, televisi, 
+                        dan media, serta memperluas jaringan internasional untuk pertukaran pengetahuan dan kolaborasi.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--VMC-->
+    <div id="VMC" class="bg-slate-950 w-auto h-auto lg:h-screen px-10 md:p-20 lg:content-center">
+        <div class="grid grid-rows-1 lg:grid-cols-3 grid-flow-col gap-5 fade-in">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 col-span-2 content-center">
+                <h2>Visual Media Communication</h2>
+                <p class="text-white text-sm lg:text-lg text-justify">
+                    Konsentrasi Visual Media Communication (VMC) berfokus pada aspek visual dan estetika dalam film, televisi, dan media. 
+                    Mahasiswa akan mempelajari berbagai teknik dan teori visual storytelling, desain grafis, animasi, dan multimedia. 
+                    Lulusan VMC diharapkan memiliki kemampuan untuk membuat konten visual yang menarik dan informatif, memahami dan menggunakan 
+                    berbagai software desain dan multimedia, bekerja secara kreatif dan kolaboratif dalam tim, memahami dan menganalisis budaya visual.
+                </p>
+            </div>
+            <div class="content-center">
+                <img src="elemen/FTM/vmc.png" alt="" class="w-auto h-auto hidden lg:block rounded-xl">
+            </div>
+        </div><br>
+    </div>
+    <!--PRDC-->
+    <div id="PRDC" class="bg-slate-950 w-auto h-auto lg:h-screen px-10 md:p-20 lg:content-center">
+        <div class="grid grid-rows-1 lg:grid-cols-3 grid-flow-col gap-5 fade-in">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 col-span-2 lg:order-2">
+                <h2>Public Relation & Digital Communication</h2>
+                <p class="text-white text-sm lg:text-lg text-justify">
+                    Konsentrasi Public Relation & Digital Communication (PRDC) berfokus pada strategi komunikasi dan penggunaan media digital 
+                    dalam membangun dan memelihara hubungan dengan publik. Mahasiswa akan mempelajari berbagai teori dan praktik public relations, 
+                    media sosial, dan komunikasi digital. Lulusan PRDC diharapkan memiliki kemampuan untuk menyusun strategi komunikasi yang efektif, 
+                    menggunakan media digital untuk membangun dan memelihara hubungan dengan publik, menganalisis dan mengukur efektivitas program 
+                    komunikasi, memahami dan mengikuti perkembangan teknologi komunikasi digital.
+                </p>
+            </div>
+            <div class="content-center">
+                <img src="elemen/FTM/prdc.png" alt="" class="w-auto h-auto hidden lg:block rounded-xl">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-in').forEach(element => {
+      observer.observe(element);
+    });
+  });
+
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const dropdownBtn = document.getElementById('dropdown-btn');
+    const dropdown = document.getElementById('dropdown');
+  
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  
+    dropdownBtn.addEventListener('click', () => {
+      dropdown.classList.toggle('hidden');
+    });
+</script>
+</html>
+
+
+

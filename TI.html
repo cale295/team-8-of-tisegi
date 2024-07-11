@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>TI</title>
+    <style>
+        .josefin-sans{
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="josefin-sans">
+    <!--Navbar-->
+    <nav class="bg-slate-950 p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white font-bold text-3xl italic">Informatics Engineering</div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex space-x-4">
+            <a href="index.html" class="text-white">Home</a>
+            <a href="#ABOUT" class="text-white">About</a>
+            <a href="#SE" class="text-white">SE</a>
+            <a href="#IOTN" class="text-white">IOTN</a>
+            <a href="#CDM" class="text-white">CDM</a>
+          </div>
+        </div>
+        <div class="md:hidden hidden" id="menu">
+          <a href="index.html" class="block px-4 py-2 text-white">Home</a>
+          <a href="#ABOUT" class="block px-4 py-2 text-white">About</a>
+          <a href="#SE" class="block px-4 py-2 text-white">SE</a>
+          <a href="#IOTN" class="block px-4 py-2 text-white">IOTN</a>
+          <a href="#CDM" class="block px-4 py-2 text-white">CDM</a>
+        </div>
+    </nav>
+    <!--about-->
+    <div id="ABOUT" class="bg-slate-950 w-auto h-auto text-white">
+        <div class="grid grid-cols-2 gap-10 p-10">
+            <div class="col-span-2 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h1 class="text-5xl font-bold text-center mb-4">Prodi Informatics Engineering</h1>
+                <p class="text-lg text-justify md:text-center max-w-6xl mx-auto">
+                    Program Studi Teknik Informatika adalah sebuah program pendidikan di Global Institute yang mempelajari tentang 
+                    pengembangan, analisis, dan penggunaan teknologi informasi dan komputer. Mahasiswa yang mengambil program studi ini 
+                    akan belajar tentang dasar-dasar teknologi informasi, pemrograman, database, jaringan komputer, keamanan informasi, 
+                    pengembangan aplikasi, desain grafis, dan topik terkait lainnya. Tujuan utama dari program studi Teknik Informatika 
+                    adalah untuk mempersiapkan lulusannya menjadi profesional di bidang teknologi informasi, seperti pengembang perangkat 
+                    lunak, administrator jaringan, arsitek solusi teknologi, UI/UX design, atau konsultan TI. Selain itu, program ini juga 
+                    bertujuan untuk memberikan dasar pengetahuan dan keterampilan untuk memecahkan masalah dalam berbagai industri dan 
+                    bidang usaha yang bergantung pada teknologi informasi dan komputer.
+                </p>
+            </div>
+            <div class="col-span-2 md:col-span-1 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Visi</h2>
+                <p>Menjadi pusat keunggulan dalam pendidikan, riset, dan inovasi teknologi informasi yang mempersiapkan individu untuk menjadi pemimpin yang mampu mengatasi tantangan global, menghasilkan solusi inovatif, dan membangun masa depan yang berkelanjutan di era digital yang terus berkembang.</p>
+            </div>
+            <div class="col-span-2 md:col-span-1 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Misi</h2>
+                <ul class="list-disc pl-5 space-y-2 text-lg leading-relaxed">
+                    <li>PMemberikan pendidikan tinggi berkualitas dalam bidang teknologi informasi yang mengintegrasikan teori dan praktik.</li>
+                    <li>Mendorong penelitian dan pengembangan teknologi informasi yang inovatif dan berkelanjutan.</li>
+                    <li>Menghasilkan lulusan yang memiliki kompetensi tinggi, berintegritas, dan siap bersaing di tingkat global.</li>
+                    <li> Menyediakan layanan dan kontribusi kepada masyarakat melalui aplikasi teknologi informasi yang berdampak positif.</li>
+                    <li>Menjalin kemitraan dengan industri dan lembaga terkait untuk meningkatkan relevansi program studi dengan kebutuhan pasar kerja.</li>
+                </ul>
+            </div>
+            <div class="col-span-2 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Tujuan</h2>
+                <ul class="list-disc px-5 lg:px-52 xl:px-64 space-y-2 text-lg leading-relaxed">
+                    <li>Memberikan pendidikan yang komprehensif dan relevan dalam bidang teknologi informasi.</li>
+                    <li>Mendorong penelitian dan pengembangan teknologi informasi yang menghasilkan kontribusi signifikan bagi ilmu pengetahuan dan masyarakat.</li>
+                    <li>Menghasilkan lulusan yang memiliki kemampuan analitis, kreatif, dan inovatif dalam menghadapi tantangan di era digital.</li>
+                    <li>Berperan aktif dalam memajukan teknologi informasi melalui kegiatan pengabdian kepada masyarakat.</li>
+                    <li>KMenjalin kerja sama yang erat dengan industri untuk memfasilitasi kesempatan magang, penelitian bersama, dan peluang karir bagi mahasiswa.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--SE-->
+    <div id="SE" class="bg-slate-950 w-auto h-auto lg:h-screen px-10 md:p-20 lg:content-center">
+        <div class="grid grid-rows-1 lg:grid-cols-3 grid-flow-col gap-5 fade-in">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 col-span-2">
+                <h2>Software Engineering</h2>
+                <p class="text-white text-sm lg:text-lg text-justify">
+                    Konsentrasi software engineering atau rekayasa perangkat lunak adalah sebuah disiplin ilmu yang berkaitan 
+                    dengan pengembangan, perancangan, dan pembuatan perangkat lunak atau software. Bidang ini meliputi seluruh 
+                    tahapan dalam siklus pengembangan perangkat lunak, mulai dari analisis kebutuhan, perancangan arsitektur, 
+                    implementasi kode, pengujian, hingga pemeliharaan atau perbaikan perangkat lunak. Seorang software engineer 
+                    atau insinyur perangkat lunak bertanggung jawab untuk membuat perangkat lunak yang aman, handal, efisien, 
+                    mudah dimengerti, dan dapat diandalkan oleh pengguna. Mereka menggunakan metode, teknologi, dan alat yang 
+                    tepat untuk membangun perangkat lunak yang sesuai dengan spesifikasi dan persyaratan klien atau pengguna. 
+                    Konsentrasi software engineering juga meliputi konsep-konsep seperti manajemen proyek perangkat lunak, 
+                    pengembangan perangkat lunak berbasis web, pengembangan aplikasi mobile, pengujian perangkat lunak, keamanan 
+                    perangkat lunak, dan pengembangan aplikasi terdistribusi. Semua aspek ini penting dalam pengembangan perangkat 
+                    lunak yang berkualitas tinggi dan dapat dipercaya oleh pengguna.
+                </p>
+            </div>
+            <div class="content-center">
+                <img src="elemen/TI/se.png" alt="" class="w-auto h-auto hidden lg:block rounded-xl">
+            </div>
+        </div><br>
+    </div>
+    <!--IOTN-->
+    <div id="IOTN" class="bg-slate-950 w-auto h-auto lg:h-screen px-10 md:p-20 lg:content-center">
+        <div class="grid grid-rows-1 lg:grid-cols-3 grid-flow-col gap-5 fade-in">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 col-span-2 lg:order-2">
+                <h2>Internet of Things (IoT) & Networking</h2>
+                <p class="text-white text-sm lg:text-lg text-justify">
+                    Internet of Things (IoT) dan Networking adalah dua bidang teknologi yang saling terkait, memainkan peran kunci 
+                    dalam menghubungkan perangkat dan sistem dalam lingkungan digital yang semakin terkoneksi. IoT memungkinkan 
+                    perangkat yang terhubung ke internet, seperti sensor, kamera, dan peralatan rumah tangga, untuk berkomunikasi 
+                    dan bertukar data, memungkinkan pengumpulan data real-time dan pengambilan keputusan yang lebih baik. Ahli di 
+                    bidang IoT bekerja pada pengembangan perangkat keras, perangkat lunak, keamanan, dan manajemen data. Sementara itu, 
+                    bidang Networking fokus pada pengembangan, manajemen, dan pengoperasian jaringan komputer, termasuk infrastruktur, 
+                    keamanan, dan manajemen jaringan. Kombinasi keahlian di kedua bidang ini diperlukan untuk mengembangkan solusi IoT 
+                    yang aman, efisien, dan terkoneksi dengan lancar.
+                </p>
+            </div>
+            <div class="content-center">
+                <img src="elemen/TI/iotn.jpg" alt="" class="w-auto h-auto hidden lg:block rounded-xl">
+            </div>
+        </div><br>
+    </div>
+    <!--CDM-->
+    <div id="CDM" class="bg-slate-950 w-auto h-auto lg:h-screen px-10 md:p-20 lg:content-center">
+        <div class="grid grid-rows-1 lg:grid-cols-3 grid-flow-col gap-5 fade-in">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 col-span-2">
+                <h2>Computerized Design & Multimedia</h2>
+                <p class="text-white text-sm lg:text-lg text-justify">
+                    Konsentrasi Computerized and Multimedia memanfaatkan teknologi komputer untuk menciptakan konten multimedia yang 
+                    interaktif dan menarik. Bidang ini melibatkan berbagai disiplin ilmu seperti desain grafis, animasi, audio, dan video, 
+                    serta pengembangan aplikasi multimedia. Ahli di bidang ini menggunakan perangkat lunak seperti Adobe Photoshop, Illustrator, 
+                    Premiere, After Effects, dan 3D Studio Max untuk menciptakan beragam konten digital, seperti situs web interaktif, 
+                    presentasi multimedia, game, dan video edukatif. Keterampilan dalam bidang ini diperlukan dalam industri media, hiburan, 
+                    pendidikan, kesehatan, bisnis, dan pemasaran, dengan peluang karir yang terus berkembang seiring dengan permintaan akan 
+                    konten multimedia yang inovatif.
+                </p>
+            </div>
+            <div class="content-center">
+                <img src="elemen/TI/cdm.png" alt="" class="w-auto h-auto hidden lg:block rounded-xl">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-in').forEach(element => {
+      observer.observe(element);
+    });
+  });
+
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const dropdownBtn = document.getElementById('dropdown-btn');
+    const dropdown = document.getElementById('dropdown');
+  
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  
+    dropdownBtn.addEventListener('click', () => {
+      dropdown.classList.toggle('hidden');
+    });
+</script>
+</html>
+
+
+

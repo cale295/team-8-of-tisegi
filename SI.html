@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>TI</title>
+    <style>
+        .josefin-sans{
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="josefin-sans">
+    <!--Navbar-->
+    <nav class="bg-slate-950 p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white font-bold text-3xl italic">Information System</div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex space-x-4">
+            <a href="index.html" class="text-white">Home</a>
+            <a href="#ABOUT" class="text-white">About</a>
+            <a href="#AIS" class="text-white">AIS</a>
+            <a href="#MIS" class="text-white">MIS</a>
+            <a href="#LPIS" class="text-white">LPIS</a>
+          </div>
+        </div>
+        <div class="md:hidden hidden" id="menu">
+          <a href="index.html" class="block rounded-xl px-4 py-2 text-white">Home</a>
+          <a href="#ABOUT" class="block rounded-xl px-4 py-2 text-white">About</a>
+          <a href="#AIS" class="block rounded-xl px-4 py-2 text-white">AIS</a>
+          <a href="#MIS" class="block rounded-xl px-4 py-2 text-white">MIS</a>
+          <a href="#LPIS" class="block rounded-xl px-4 py-2 text-white">LPIS</a>
+        </div>
+    </nav>
+    <!--about-->
+    <div id="ABOUT" class="bg-slate-950 w-auto h-auto text-white">
+        <div class="grid grid-cols-2 gap-10 p-10">
+            <div class="col-span-2 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h1 class="text-5xl font-bold text-center mb-4">Prodi System Information</h1>
+                <p class="text-lg text-justify md:text-center max-w-6xl mx-auto">
+                    Program studi Sistem Informasi adalah pendidikan tinggi yang menggabungkan teknologi informasi dengan bisnis 
+                    untuk mengembangkan, menggunakan, dan mengelola sistem informasi dalam sebuah organisasi. Materi kuliah meliputi 
+                    analisis sistem, manajemen proyek, desain basis data, keamanan informasi, dan lainnya. Lulusan dapat bekerja di 
+                    berbagai industri seperti IT, konsultasi bisnis, perbankan, dan pemerintah dengan posisi seperti analis sistem, 
+                    pengembang aplikasi, atau manajer proyek. Dalam era digital, sistem informasi semakin penting dalam operasi bisnis, 
+                    sehingga lulusan memiliki peluang karir yang baik dan dibutuhkan oleh banyak organisasi.
+                </p>
+            </div>
+            <div class="col-span-2 md:col-span-1 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Visi</h2>
+                <p>Menjadi pusat unggulan dalam pendidikan dan penelitian sistem informasi yang menghasilkan lulusan yang kompeten 
+                    dan inovatif serta berkontribusi pada perkembangan teknologi informasi global.</p>
+            </div>
+            <div class="col-span-2 md:col-span-1 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Misi</h2>
+                <ul class="list-disc pl-5 space-y-2 text-lg leading-relaxed">
+                    <li>Pendidikan Berkualitas: Memberikan pendidikan tinggi yang berkualitas dalam bidang sistem informasi yang 
+                        mencakup pemahaman mendalam tentang konsep-konsep dasar, teknologi terkini, dan praktik terbaik dalam pengembangan sistem informasi.</li>
+                    <li>Penelitian dan Pengembangan: Melakukan penelitian inovatif dalam bidang sistem informasi yang memberikan 
+                        kontribusi pada pengetahuan akademis dan praktek industri.</li>
+                    <li>Koneksi dengan Industri: Membangun kemitraan yang erat dengan industri teknologi informasi untuk memastikan 
+                        relevansi kurikulum, menyediakan kesempatan magang, dan memfasilitasi penempatan kerja bagi lulusan.</li>
+                    <li> Pemberdayaan Mahasiswa: Mendorong mahasiswa untuk mengembangkan keterampilan teknis dan analitis, serta kemampuan 
+                        untuk berkolaborasi, berkomunikasi, dan berinovasi dalam lingkungan kerja yang beragam.</li>
+                    <li>Pengabdian pada Masyarakat: Menggunakan pengetahuan dan keterampilan dalam sistem informasi untuk memberikan 
+                        solusi teknologi informasi yang berkelanjutan dan memberikan kontribusi pada pembangunan masyarakat.</li>
+                </ul>
+            </div>
+            <div class="col-span-2 fade-in"> <!-- Tambahkan kelas fade-in di sini -->
+                <h2 class="text-4xl font-semibold text-center mb-4">Tujuan</h2>
+                <ul class="list-disc px-5 lg:px-52 xl:px-64 space-y-2 text-lg leading-relaxed">
+                    <li>Lulusan Berkualitas: Menghasilkan lulusan yang memiliki pemahaman yang kuat tentang sistem informasi, 
+                        kemampuan teknis yang solid, dan keterampilan interpersonal yang baik.</li>
+                    <li>Pusat Penelitian Unggul: Menjadi pusat penelitian yang diakui secara internasional dalam bidang sistem 
+                        informasi yang menghasilkan penemuan dan inovasi yang berdampak.</li>
+                    <li>Kemitraan yang Kokoh: Memperkuat kemitraan dengan industri dan organisasi lainnya untuk meningkatkan 
+                        pengalaman belajar mahasiswa dan memfasilitasi jalur karir yang lebih baik.</li>
+                    <li>Kontribusi Terhadap Perkembangan Teknologi: Memberikan kontribusi pada perkembangan teknologi informasi 
+                        melalui penelitian, publikasi, dan pengembangan solusi teknologi yang inovatif.</li>
+                    <li>Kesadaran Masyarakat: Meningkatkan kesadaran masyarakat tentang pentingnya sistem informasi dalam kehidupan 
+                        sehari-hari dan bagaimana teknologi informasi dapat digunakan untuk meningkatkan efisiensi, produktivitas, dan inovasi.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--AIS-->
+    <div id="AIS" class="bg-slate-950 w-auto h-auto lg:h-screen px-10 md:p-20 lg:content-center">
+        <div class="grid grid-rows-1 lg:grid-cols-3 grid-flow-col gap-5 fade-in">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 col-span-2">
+                <h2>Accounting Information System</h2>
+                <p class="text-white text-sm lg:text-lg text-justify">
+                    Konsentrasi Accounting Information System (AIS) membahas pengembangan, penggunaan, dan manajemen sistem informasi 
+                    akuntansi dalam organisasi. Mahasiswa mempelajari integrasi antara akuntansi dan teknologi informasi, termasuk topik 
+                    seperti akuntansi keuangan, basis data, pengendalian internal, dan audit. Lulusan AIS memiliki peluang karir di berbagai 
+                    industri, seperti akuntansi, keuangan, dan perbankan, dalam peran seperti akuntan, auditor, dan analis keuangan. 
+                    Dalam era digital saat ini, sistem informasi akuntansi menjadi semakin penting dalam operasi dan manajemen keuangan, 
+                    sehingga lulusan AIS akan terus dibutuhkan oleh organisasi yang memerlukan keahlian dalam teknologi informasi dan akuntansi.
+                </p>
+            </div>
+            <div class="content-center">
+                <img src="elemen/SI/ais.jpg" alt="" class="w-auto h-auto hidden lg:block rounded-xl">
+            </div>
+        </div><br>
+    </div>
+    <!--MIS-->
+    <div id="MIS" class="bg-slate-950 w-auto h-auto lg:h-screen px-10 md:p-20 lg:content-center">
+        <div class="grid grid-rows-1 lg:grid-cols-3 grid-flow-col gap-5 fade-in">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 col-span-2 lg:order-2">
+                <h2>Management Information System</h2>
+                <p class="text-white text-sm lg:text-lg text-justify">
+                    Konsentrasi Management Information System (MIS) membahas penggunaan dan pengelolaan sistem informasi dalam organisasi untuk 
+                    mendukung pengambilan keputusan dan manajemen bisnis yang efektif. Mahasiswa mempelajari tentang teknologi informasi dan manajemen, 
+                    termasuk manajemen proyek, analisis bisnis, keamanan informasi, dan e-commerce. Lulusan bidang MIS memiliki kesempatan karir 
+                    di berbagai industri, termasuk teknologi informasi, perbankan, dan pemerintahan, dalam peran seperti analis sistem, pengembang aplikasi, 
+                    dan manajer TI. Dalam era digital saat ini, kebutuhan akan ahli MIS terus meningkat karena pentingnya sistem informasi dalam operasi bisnis.
+                </p>
+            </div>
+            <div class="content-center">
+                <img src="elemen/SI/mis.jpg" alt="" class="w-auto h-auto hidden lg:block rounded-xl">
+            </div>
+        </div><br>
+    </div>
+    <!--LPIS-->
+    <div id="LPIS" class="bg-slate-950 w-auto h-auto lg:h-screen px-10 md:p-20 lg:content-center">
+        <div class="grid grid-rows-1 lg:grid-cols-3 grid-flow-col gap-5 fade-in">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 col-span-2">
+                <h2>Logistic & Production Information System</h2>
+                <p class="text-white text-sm lg:text-lg text-justify">
+                    Konsentrasi Logistic & Production Information System (LPIS) membahas pengembangan, penggunaan, dan manajemen sistem informasi dalam 
+                    logistik dan produksi organisasi. Mahasiswa mempelajari integrasi antara teknologi informasi, logistik, dan manajemen produksi, 
+                    termasuk manajemen rantai pasok, produksi, persediaan, dan pengendalian kualitas. Lulusan LPIS memiliki peluang karir di berbagai industri, 
+                    seperti manufaktur, perdagangan, dan logistik, dalam peran seperti analis logistik, manajer produksi, dan manajer rantai pasok. 
+                    Dalam era digital saat ini, sistem informasi logistik dan produksi semakin penting dalam operasi bisnis, sehingga lulusan LPIS akan 
+                    terus dicari oleh organisasi yang membutuhkan keahlian dalam teknologi informasi dan manajemen logistik dan produksi.
+                </p>
+            </div>
+            <div class="content-center">
+                <img src="elemen/SI/lpis.jpg" alt="" class="w-auto h-auto hidden lg:block rounded-xl">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-in').forEach(element => {
+      observer.observe(element);
+    });
+  });
+
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const dropdownBtn = document.getElementById('dropdown-btn');
+    const dropdown = document.getElementById('dropdown');
+  
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  
+    dropdownBtn.addEventListener('click', () => {
+      dropdown.classList.toggle('hidden');
+    });
+</script>
+</html>
+
+
+

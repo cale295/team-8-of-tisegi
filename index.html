@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+      .josefin-sans{
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="josefin-sans">
+    <!--Navbar-->
+    <nav class="bg-slate-950 p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white font-bold text-3xl italic">FTIK</div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex space-x-4">
+            <a href="#Home" class="text-white">Home</a>
+            <a href="#Academics" class="text-white">Academics</a>
+            <a href="#Structure" class="text-white">Structure</a>
+            <a href="#Achievment" class="text-white">Achievements</a>
+            <a href="#Gallery" class="text-white">Gallery</a>
+          </div>
+        </div>
+        <div class="md:hidden hidden" id="menu">
+          <a href="#Home" class="block px-4 py-2 text-white">Home</a>
+          <a href="#Academics" class="block px-4 py-2 text-white">Academics</a>
+          <a href="#Structure" class="block px-4 py-2 text-white">Structure</a>
+          <a href="#Achievment" class="block px-4 py-2 text-white">Achievements</a>
+          <a href="#Gallery" class="block px-4 py-2 text-white">Gallery</a>
+        </div>
+    </nav>
+    <!--Home-->
+    <div id="Home" class="bg-slate-950 w-auto h-auto md:h-screen px-10 md:px-16 py-10 md:py-0  md:content-center">
+        <div class="grid grid-rows-1 lg:grid-rows-3 md:grid-cols-3 grid-flow-col gap-2">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 pt-0 md:pt-40 ">
+                FAKULTAS TEKNOLOGI INFORMASI & KOMUNIKASI
+            </div>
+            <div class="text-white text-sm lg:text-lg text-justify">
+              Fakultas Teknologi Informasi dan Komunikasi (FTIK) adalah sebuah fakultas dalam suatu universitas yang fokus pada pendidikan, penelitian, dan pengembangan dalam bidang teknologi informasi dan komunikasi. Fakultas ini biasanya mencakup program studi yang berkaitan dengan komputer, teknologi informasi, sistem informasi, jaringan, komunikasi digital, dan bidang terkait lainnya.
+            </div>
+            <a href="FTIK.html">
+              <button class="bg-purple-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out w-48 h-14 md:w-56 md:h-20 lg:w-64 lg:h-24">
+                Explore Now
+              </button>
+            </a>
+            <div class="row-span-3 col-span-2 content-center">
+                <img src="elemen/kampus-global-institute.jpeg.webp" alt="" class="w-auto h-auto hidden md:block rounded-xl">
+            </div>
+        </div>
+    </div>
+    <!--academics-->
+    <div id="Academics" class="bg-slate-950 w-auto h-auto xl:h-screen content-center">
+      <div class="text-white text-center text-3xl py-5 fade-in">
+        <h2>ACADEMICS</h2>
+      </div>
+      <div class="flex flex-wrap justify-center  gap-12 lg::gap-36 fade-in">
+        <div class="w-auto md:w-96 h-128 bg-slate-900 rounded-2xl text-white p-20 flex flex-col items-start justify-center gap-3 transition-all duration-500 hover:h-144 hover:shadow-2xl hover:shadow-slate-400">
+          <div class="font-bold text-3xl">
+            Informatics Engineering
+          </div>
+          <div class="pb-10">
+            1. Software Engineering<br>
+            2. Internet Of Think & Networking<br>
+            3. Computerized Design & Multimedia
+          </div>
+          <a href="TI.html">
+            <button class="bg-purple-500 font-extrabold p-2 px-6 rounded-xl hover:bg-purple-600 transition-colors">See more</button>
+          </a>
+        </div>
+        <div class="w-auto md:w-96 h-128 bg-slate-900 rounded-2xl text-white p-20 flex flex-col items-start justify-center gap-3 transition-all duration-500 hover:h-144 hover:shadow-2xl hover:shadow-slate-400">
+          <div class="font-bold text-3xl">
+            Information System
+          </div>
+          <div class="pb-10">
+            1. Accounting Information System<br>
+            2. Management Information System<br>
+            3. Logistic & Production Information System
+          </div>
+          <a href="SI.html">
+            <button class="bg-purple-500 font-extrabold p-2 px-6 rounded-xl hover:bg-purple-600 transition-colors">See more</button>
+          </a>
+        </div>
+        <div class="w-auto md:w-96 h-128 bg-slate-900 rounded-2xl text-white p-20 flex flex-col items-start justify-center gap-3 transition-all duration-500 hover:h-144 hover:shadow-2xl hover:shadow-slate-400">
+          <div class="font-bold text-3xl">
+            Film, Television & Media Studies
+          </div>
+          <div class="pb-10">
+            1. Visual Media Communication<br>
+            2. Public Relation & Digital Communication
+          </div>
+          <a href="FTM.html">
+            <button class="bg-purple-500 font-extrabold p-2 px-6 rounded-xl hover:bg-purple-600 transition-colors">See more</button>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-0 lg::gap-36 fade-in">
+        <a href="elemen/file/CURRICULUM.pdf" download="CURRICULUM.pdf">
+          <div class="w-72 md:w-144 h-20 bg-slate-900 rounded-2xl text-white m-5 p-10 flex flex-col items-center justify-center gap-3 transition-all duration-500 hover:h-28 hover:shadow-2xl hover:shadow-slate-400">
+            <div class="text-2xl">
+              Curriculum
+            </div>
+          </div>
+        </a>
+        <a href="elemen/file/ACADEMICS GUIDE.pdf" download="ACADEMICS GUIDE.pdf" >
+          <div class="w-72 md:w-144 h-20 bg-slate-900 rounded-2xl text-white m-5 p-10 flex flex-col items-center justify-center gap-3 transition-all duration-500 hover:h-28 hover:shadow-2xl hover:shadow-slate-400">
+          <div class="text-2xl">
+            Academics Guide
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+    <!--Struktur-->
+    <div id="Structure" class="bg-slate-950 w-auto h-screen content-center">
+      <div class="text-white text-center text-3xl py-5 fade-in">
+        <h2>STRUCTURE</h2>
+      </div>
+      <div class="p-6 md:p-10 h-auto flex items-center justify-center bg-slate-950">
+        <div class="container mx-auto container-custom p-5 max-h-[80vh] overflow-auto shadow-lg rounded-lg bg-slate-800">
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-300">
+                <li class="flex flex-col items-center text-center p-4 bg-slate-700 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-white">Dekan FTIK</h3>
+                    <p class="text-lg md:text-xl text-gray-300">Rahmat Tullah, M.Kom.</p>
+                </li>
+                <li class="flex flex-col items-center text-center p-4 bg-slate-700 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <h3 class="text-xl md:text-2xl font-semibold text-white">Ka. Prodi Sistem Informasi</h3>
+                    <p class="text-lg md:text-xl text-gray-300">Ahmad Sidik, M.Kom.</p>
+                </li>
+                <li class="flex flex-col items-center text-center p-4 bg-slate-700 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <h3 class="text-xl md:text-2xl font-semibold text-white">Ka. Prodi Teknik Informatika</h3>
+                    <p class="text-lg md:text-xl text-gray-300">Dr (Cand) Fredy Susanto, M.Kom.</p>
+                </li>
+                <li class="flex flex-col items-center text-center p-4 bg-slate-700 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <h3 class="text-xl md:text-2xl font-semibold text-white">Ka. Prodi Kajian Film & Media</h3>
+                    <p class="text-lg md:text-xl text-gray-300">M. Luthfi Prabowo, M.Ikom.</p>
+                </li>
+                <li class="flex flex-col items-center text-center p-4 bg-slate-700 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    <h3 class="text-xl md:text-2xl font-semibold text-white">Sekretaris Fakultas (FTIK)</h3>
+                    <p class="text-lg md:text-xl text-gray-300">Nunung Nurmaesah, M.Kom.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    </div>
+    <!--achievment-->
+    <div id="Achievment" class="bg-slate-950 w-auto h-auto md:h-screen content-center">
+      <div class="text-white text-center text-3xl py-5 fade-in">
+        <h2>ACHIEVEMENTS</h2>
+      </div>
+      <div class="container mx-auto p-4 overflow-y-auto h-screen">
+        <div class="space-y-4">
+          <div class="rounded-lg m-10">
+            <img src="elemen/prestasi/Petanque-Global-Institute-2.jpeg.webp" alt="Image 1" class="w-full h-full object-cover">
+            <div class="px-4 py-2 bg-white rounded-b-lg">
+              <p class="text-sm text-gray-600 text-center">Kejuaran Nasional Petanque Di Banten Tahun 2022</p>
+            </div>
+          </div>
+          <div class="rounded-lg m-10">
+            <img src="elemen/prestasi/Petanque-Global-Institute-2022.jpg.webp" alt="Image 2" class="w-full h-full object-cover">
+            <div class="px-4 py-2 bg-white rounded-b-lg">
+              <p class="text-sm text-gray-600 text-center">Kejuaran Nasional Petanque Di Banten Tahun 2022</p>
+            </div>
+          </div>
+          <div class="rounded-lg m-10">
+            <img src="elemen/prestasi/14680822_1776965815848304_2551782478555080835_o.jpg.webp" alt="Image 3" class="w-full h-full object-cover">
+            <div class="px-4 py-2 bg-white rounded-b-lg">
+              <p class="text-sm text-gray-600 text-center">Peserta Kebut Gunung Nasional Gede – Pangrango</p>
+            </div>
+          </div>
+          <div class="rounded-lg m-10">
+            <img src="elemen/prestasi/12190099_1660388997505987_3856668745515568026_n.jpg.webp" alt="Image 5" class="w-full h-full object-cover">
+            <div class="px-4 py-2 bg-white rounded-b-lg">
+              <p class="text-sm text-gray-600 text-center">Juara Umum Lomba Circuit Orienteering Banten</p>
+            </div>
+          </div>
+          <div class="rounded-lg m-10">
+            <img src="elemen/prestasi/IMG_1775-scaled.jpg.webp" alt="Image 6" class="w-full h-full object-cover">
+            <div class="px-4 py-2 bg-white rounded-b-lg">
+              <p class="text-sm text-gray-600 text-center">Seminar Nasional</p>
+            </div>
+          </div>
+          <div class="rounded-lg m-10">
+            <img src="elemen/prestasi/SOT-Global-Institute-2022-scaled.jpg.webp" alt="Image 7" class="w-full h-full object-cover">
+            <div class="px-4 py-2 bg-white rounded-b-lg">
+              <p class="text-sm text-gray-600 text-center">SOT Global Institute 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Gallery-->
+    <div id="Gallery" class="bg-slate-950 w-auto h-auto md:h-screen flex flex-col md:justify-center items-center">
+      <div class="text-white text-center text-3xl py-5 fade-in">
+        <h2>GALLERY</h2>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg w-full md:w-auto lg:w-155 max-w-5xl fade-in">
+        <div class="border-b border-gray-200">
+            <nav class="flex space-x-8 p-6 justify-center">
+                <button class="py-4 px-6 text-xl text-gray-700 border-b-4 border-gray-800 focus:outline-none"
+                    onclick="showTab('2022')">2022</button>
+                <button class="py-4 px-6 text-xl text-gray-700 focus:outline-none"
+                    onclick="showTab('2023')">2023</button>
+                <button class="py-4 px-6 text-xl text-gray-700 focus:outline-none"
+                    onclick="showTab('2024')">2024</button>
+            </nav>
+        </div>
+        <div id="2022" class="p-6">
+            <ol class="list-decimal pl-10 text-xl text-gray-700 space-y-3">
+                <li>
+                  <a href="https://photos.app.goo.gl/nSaTBHHC2oFfWPwW9">Family Gathering Global Institute</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/dSPdGXezHN4gKH569">Gathering Guru BK Tangerang Raya</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/r3ZqUGs6szEL8VNb6">MoU dengan AAPI</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/9EzWGKtfXANg3E9CA">Kerja Sama dengan SMK Jaya Buana</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/bR32HxnSKhjsWp6K8">MoU ITB dengan Bali</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/DDFTzefRfoarwGWp9">KKN Tematik</a>
+                </li>
+            </ol>
+        </div>
+        <div id="2023" class="p-6 hidden">
+            <ol class="list-decimal pl-10 text-xl text-gray-700 space-y-3">
+                <li>
+                  <a href="https://photos.app.goo.gl/k5pNxsRFc1V4ivit9">MoU dengan LPI3 Bandung</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/rSpGckcEt4g4RSE67">MoA dengan STT Bandung</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/Er9dfJwZ1sn3Fx349">Bimtek Guru BK Kota Tangerang</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/BdSgvk9BMbk2Evcy6">Kunjungan ke Yayasan Tunas Harapan Ilahi</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/31paAVPbTYm6mo5e7">Seminar UMUM Strategi Jitu Siap Kerja</a>
+                </li>
+            </ol>
+        </div>
+        <div id="2024" class="p-6 hidden">
+            <ol class="list-decimal pl-10 text-xl text-gray-700 space-y-3">
+                <li>
+                  <a href="https://photos.app.goo.gl/CzUB33hWXDUuGpzX7">Undangan Kolaborasi Walikota Tangerang</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/7jfXkauzCi3HTSN37">LKBB Bimantara 2024</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/GM8ZmE2MqBqYGEDK7">MoC dengan Kampus Taiwan</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/iYFrbKV6cCNYVrZR8">MoU dengan Urawa international School</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/wncfZvczyBxZeUug8">Kolaborasi dengan Urawa international Japan School</a>
+                </li>
+            </ol>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="bg-slate-950 w-auto h-auto text-white text-lg text-center py-10 content-center">
+      Copyright © Cookies Security Terms of Service Privacy Statement
+    </div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-in').forEach(element => {
+      observer.observe(element);
+    });
+  });
+
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  const dropdownBtn = document.getElementById('dropdown-btn');
+  const dropdown = document.getElementById('dropdown');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  dropdownBtn.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden');
+  });
+
+  function showTab(tabId) {
+    const tabs = ['2022', '2023', '2024'];
+    tabs.forEach(id => {
+    document.getElementById(id).classList.add('hidden');
+    });
+    document.getElementById(tabId).classList.remove('hidden');
+      const buttons = document.querySelectorAll('nav button');
+      buttons.forEach(button => {
+        button.classList.remove('border-b-4', 'border-gray-800');
+      });
+    document.querySelector(`nav button[onclick="showTab('${tabId}')"]`).classList.add('border-b-4', 'border-gray-800');
+  }
+</script>
+</html>
